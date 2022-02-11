@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tip Calculator App</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -16,7 +17,7 @@
         </div>
         <div class="row bill">
           <h3>Total Bill Amount:</h3>
-          <input type="text" placeholder="$0.00" />
+          <input type="text" placeholder="$0.00" id="billTotal" />
         </div>
         <div class="row tip">
           <h3>How much would you like to tip?</h3>
@@ -33,6 +34,9 @@
         <div class="row persons">
           <h3>Number of People:</h3>
           <input type="text" placeholder="#" />
+        </div>
+        <div class="row calculate">
+          <input type="submit" placeholder="Calculate" id="calculateBtn" />
         </div>
         <hr />
         <div class="output">
