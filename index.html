@@ -11,41 +11,38 @@
   <body>
     <div class="container">
       <div class="card">
-        <div class="bill card col-sm-12 col-md-6">
-          <div class="card-body">
-            <div class="amount">
-              <h3>Bill</h3>
-              <input type="text" placeholder="$0.00" />
-            </div>
-            <div class="percentage">
-              <h3>Select Tip %</h3>
-              <button>5%</button>
-              <button>10%</button>
-              <button>15%</button>
-              <button>25%</button>
-              <button>50%</button>
+        <div class="appTitle">
+          <h1>Tip Calculator</h1>
+        </div>
+        <div class="row bill">
+          <h3>Total Bill Amount:</h3>
+          <input type="text" placeholder="$0.00" />
+        </div>
+        <div class="row tip">
+          <h3>How much would you like to tip?</h3>
+          <div class="percentages">
+            <button>10%</button>
+            <button>15%</button>
+            <button>20%</button>
+            <button>25%</button>
+            <div class="other">
               <input type="text" placeholder="Other" />
-            </div>
-            <div class="people">
-              <h3>Number of People</h3>
-              <input type="text" placeholder="#" />
             </div>
           </div>
         </div>
-
-        <div class="results card col-sm-12 col-md-6">
-          <div class="card-body">
-            <div class="tipAmount">
-              <h3>Tip Amount</h3>
-              <p>$0.00</p>
-            </div>
-            <div class="individualAmount">
-              <h3>Amount per Person</h3>
-              <p>$0.00</p>
-            </div>
-            <div class="reset">
-              <input type="reset" placeholder="Reset" />
-            </div>
+        <div class="row persons">
+          <h3>Number of People:</h3>
+          <input type="text" placeholder="#" />
+        </div>
+        <hr />
+        <div class="output">
+          <div class="row">
+            <h3>Tip Per Person:</h3>
+            <input type="text" placeholder="$0.00" readonly="readonly" />
+          </div>
+          <div class="row">
+            <h3>Total Amount Per Person:</h3>
+            <input type="text" placeholder="$0.00" readonly="readonly" />
           </div>
         </div>
       </div>
